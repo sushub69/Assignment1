@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sushav's School</title>
+    <link rel="stylesheet" href="reference.css">
+    <style>
+        #quote {
+         font-size: 1.2rem;
+        font-style: italic;
+        margin-bottom: 20px;
+        color: #555;
+        min-height: 50px;
+    }
+        #quoteBtn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        background-color: #4a90e2;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+        #quoteBtn:hover {
+            transform: scale(1.1);
+    }
+    input {
+    padding: 10px 13px ;
+    margin: 5px;
+    }
+
+    button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    }
+    
+    #result {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My School</h1>
+    <p>We are a friendly school focused on learning, growth, and community. Everyone is welcome here!. Just make sure to pay</p>
+    <p id="quote">Click the button for a quote!</p>
+    <button id="quoteBtn" onclick="newQuote()">
+        New Quote
+    </button>
+    <h2>Available Jobs</h2>
+    <ul>
+        <li>Math Teacher</li>
+        <li>Science Lab Assistant</li>
+        <li>Janitor</li>
+        <li>IT Support</li>
+    </ul>
+
+    <h2>Number of Subjects</h2>
+    <p>We currently offer <strong>9 subjects</strong> across all grades.</p>
+    <ol>
+        <li>Mathematics</li>
+        <li>English</li>
+        <li>Science</li>
+        <li>Nepali</li>
+        <li>Sports</li>
+        <li>Computer Science</li>
+        <li>Art</li>
+        <li>Music</li>
+        <li>Social</li>
+    </ol>
+    <h2>Simple Calculator</h2>
+
+<input type="number" id="num1" placeholder="First Number">
+<input type="number" id="num2" placeholder="Second Number">
+
+<br><br>
+
+<button onclick="add()">Add</button>
+<button onclick="subtract()">Subtract</button>
+<button onclick="multiply()">Multiply</button>
+<button onclick="divide()">Divide</button>
+
+<p id="result">Result: </p>
+
+    <h2>Useful Links</h2>
+    <ul>
+        <li><a href="https://www.khanacademy.org" target="_blank">Khan Academy </a></li>
+        <li><a href="https://quizlet.com/" target="_blank">Quizlet</a></li>
+        <li><a href="https://earth.google.com/web/" target="_blank">Google Earth</a></li>
+    </ul>
+
+    <h2>Top Students</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Graduation Year</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td>Emma Burgers</td>
+            <td>2025</td>
+            <td>A+</td>
+        </tr>
+        <tr>
+            <td>Harry Magar</td>
+            <td>2025</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Santosh Brown</td>
+            <td>2024</td>
+            <td>A+</td>
+        </tr>
+        <tr>
+            <td>Narayan Chaudary</td>
+            <td>2024</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>David Wilson</td>
+            <td>2023</td>
+            <td>A+</td>
+        </tr>
+    </table>
+
+<h2>Gallery</h2>
+    <img src="building.jpg" alt="School building" width="300" height="200">
+    <img src="students.jpg" alt="Students in classroom" width="300" height="200">
+    <img src="library.avif" alt="Books and library" width="300" height="200">
+
+<h2>Contact Us</h2>
+<form>
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname"><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+
+    <label for="subject">Subject:</label><br>
+    <input type="text" id="subject" name="subject"><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message"></textarea><br><br>
+
+    <input type="submit" value="Send Message">
+    </form>
+
+    <hr>
+    <p><small>My School &copy; 2026</small></p>
+    <script src="javascript.js"> </script>   
+</body>
+</html>
